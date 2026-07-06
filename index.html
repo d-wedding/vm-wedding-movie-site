@@ -4,76 +4,108 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Wedding Movie | motto movie collection</title>
-    <meta
-      name="description"
-      content="結婚式の感情を映像で残す、mottoのウェディングムービー商品紹介ページです。"
-    />
+    <meta name="description" content="mottoのウェディングムービー商品紹介ページ" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header" aria-label="サイトヘッダー">
       <a class="brand" href="#top" aria-label="Wedding Movie top">
         <img data-config-image="logo" src="./assets/motto-logo.png" alt="motto" />
-        <span>WEDDING PHOTO &amp; MOVIE BRAND</span>
+        <span>wedding movie brand</span>
       </a>
       <nav class="nav" aria-label="ページ内ナビゲーション">
         <a href="#ending">エンディング</a>
         <a href="#document">ドキュメント</a>
         <a href="#sub-items">サブアイテム</a>
         <a href="#plans">おすすめプラン</a>
+        <a data-config-link="sampleMovie" href="https://sites.google.com/datapool.co.jp/sample-site-vm/sample-movie">サンプルムービー</a>
+        <a href="#bgm">BGM著作権</a>
+        <a href="#flow">納品まで</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero" aria-label="Wedding Movie">
-        <div class="hero-media">
-          <img data-config-image="hero" src="./assets/hero.jpg" alt="Wedding Movie 表紙イメージ" />
+      <section class="hero-simple" aria-label="motto concept">
+        <div class="hero-mark">motto｜wedding movie brand</div>
+        <h1>
+          <span>憶えておきたい感情がある</span>
+          <span>紡いでいきたい想いがある</span>
+        </h1>
+      </section>
+
+      <section class="instagram-cta" aria-label="motto instagram follow">
+        <div class="instagram-copy">
+          <p class="cta-eyebrow">motto instagram</p>
+          <h2>最新の映像をInstagramで見る</h2>
+          <p>実際の雰囲気や新しい映像は motto instagramで発信しています</p>
         </div>
-        <div class="hero-copy">
-          <p class="section-kicker">Wedding Story to Movie</p>
-          <h1>想いを、映像で残す。</h1>
-          <p>
-            花嫁姿を見て抱きしめた瞬間。友人と手を握った時間。
-            言葉にならない感情まで、結婚式の一日をムービーに。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#ending">商品を見る</a>
-            <a class="button secondary" href="#plans">お得なプランを見る</a>
-          </div>
-        </div>
+        <a class="insta-follow-button" data-config-link="instagram" href="https://www.instagram.com/motto_wd">
+          <span class="insta-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="4"/><circle cx="12" cy="12" r="3.2"/><path d="M16.8 7.7h.01"/></svg>
+          </span>
+          <span>motto instagram</span>
+          <strong>フォローして最新映像を見る</strong>
+        </a>
       </section>
 
       <section class="link-cards" aria-label="関連リンク">
-        <a data-config-link="videographer" class="link-card" href="#contact">
+        <a data-config-link="videographer" class="link-card" href="https://sites.google.com/datapool.co.jp/videographer-selection/top">
           <span class="link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h6A2.5 2.5 0 0 1 15 8.5v7A2.5 2.5 0 0 1 12.5 18h-6A2.5 2.5 0 0 1 4 15.5v-7Z"/><path d="m15 10 5-3v10l-5-3v-4Z"/></svg>
           </span>
-          <strong>Videographer Selection</strong>
+          <strong>videographer selection</strong>
           <span>希望のビデオグラファーを指名</span>
         </a>
-        <a data-config-link="sampleMovie" class="link-card" href="#contact">
+        <a data-config-link="sampleMovie" class="link-card" href="https://sites.google.com/datapool.co.jp/sample-site-vm/sample-movie">
           <span class="link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4V8Z"/></svg>
           </span>
-          <strong>Sample Movie</strong>
+          <strong>sample movie</strong>
           <span>各アイテムの映像を見る</span>
         </a>
-        <a data-config-link="instagram" class="link-card" href="#contact">
+        <a data-config-link="instagram" class="link-card" href="https://www.instagram.com/motto_wd">
           <span class="link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="4"/><circle cx="12" cy="12" r="3.2"/><path d="M16.8 7.7h.01"/></svg>
           </span>
-          <strong>Motto Instagram</strong>
+          <strong>motto instagram</strong>
           <span>最新の映像をチェック</span>
         </a>
+        <a data-config-link="prepareSite" class="link-card" href="https://sites.google.com/d-wedding.co.jp/m-ver?usp=sharing">
+          <span class="link-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7V3Z"/><path d="M14 3v5h5"/><path d="M9.5 13h5"/><path d="M9.5 17h5"/></svg>
+          </span>
+          <strong>preparation site</strong>
+          <span>準備物はこちら</span>
+        </a>
+      </section>
+
+      <section class="primary-cta" aria-label="映像確認リンク">
+        <p class="cta-eyebrow">movie collection order menu</p>
+        <h2>まずは映像でイメージする</h2>
+        <p>気になるアイテムの雰囲気や残し方を サンプルムービーからご確認いただけます</p>
+        <div class="cta-actions">
+          <a class="cta-button primary" data-config-link="sampleMovie" href="https://sites.google.com/datapool.co.jp/sample-site-vm/sample-movie">
+            <span>sample movie</span>
+            <strong>サンプルムービーを見る</strong>
+          </a>
+          <a class="cta-button secondary" data-config-link="videographer" href="https://sites.google.com/datapool.co.jp/videographer-selection/top">
+            <span>videographer selection</span>
+            <strong>ビデオグラファー指名を見る</strong>
+          </a>
+        </div>
       </section>
 
       <section class="concept">
         <div class="concept-inner">
           <p class="section-kicker">Made by motto</p>
-          <h2>あの日の出来事を思い出すのではなく、あのときの感情に立ち返る。</h2>
-          <p>
-            wedding movieは、記録として残すだけでなく、結婚式で揺れ動いた感情や表情を
-            いつでも思い返せるように形にするムービーアイテムです。
+          <h2>
+            <span>あの日の出来事を思い出すのではなく</span>
+            <span>あのときの感情に立ち返る</span>
+          </h2>
+          <p class="lead-lines">
+            <span>wedding movieは記録として残すだけでなく</span>
+            <span>結婚式で揺れ動いた感情や表情を</span>
+            <span>いつでも思い返せるように形にするムービーアイテムです</span>
           </p>
         </div>
       </section>
@@ -82,6 +114,7 @@
         <div class="section-label">
           <p class="section-kicker">Main Item 01</p>
           <h2>エンディングムービー</h2>
+          <p class="lead-lines"><span>パーティーの結びに上映する</span><span>当日編集のダイジェストムービー</span></p>
         </div>
 
         <article class="main-product">
@@ -92,14 +125,19 @@
             <p class="product-subtitle">当日上映 / 当日納品</p>
             <p class="price">¥195,000 <small>税込 ¥214,500</small></p>
             <p>
-              挙式からお色直しまでを撮影し、約3-5分のダイジェストムービーとして
-              パーティーの結びに上映します。
+              ヘアメイクからお色直しまでを撮影し 約4-5分のダイジェストムービーとして上映します
+              結婚式の余韻をゲストと一緒に感じられる人気アイテムです
             </p>
-            <ul class="tag-list">
-              <li>ダイジェストBGM1曲</li>
-              <li>USB type-C納品</li>
-              <li>mottoおすすめBGM or ISUM対応</li>
+            <ul class="icon-list">
+              <li><span class="mini-icon">撮影</span><strong>撮影範囲</strong><small>ヘアメイクからお色直しまで</small></li>
+              <li><span class="mini-icon">BGM</span><strong>ダイジェストBGM1曲</strong><small>mottoおすすめ またはISUM対応</small></li>
+              <li><span class="mini-icon">上映</span><strong>当日上映</strong><small>ご婚礼おひらき前に上映</small></li>
+              <li><span class="mini-icon">USB</span><strong>USB type-C納品</strong><small>おひらき後にお渡し</small></li>
             </ul>
+            <div class="important-note">
+              <strong>ISUM音源をご希望のお客様へ</strong>
+              <p><span>別途ISUM楽曲申請料</span> <span class="nowrap">本体 ¥8,000</span> <span class="nowrap">税込 ¥8,800</span> <span>にて弊社申請代行いたします</span></p>
+            </div>
           </div>
         </article>
 
@@ -110,31 +148,64 @@
           </div>
           <div class="option-grid">
             <article class="option-card">
-              <span>01</span>
+              <span class="option-num">01</span>
               <h4>音声付きエンディングムービー</h4>
-              <p>当日のエンディングムービーに一部音声をお入れします。</p>
+              <p>より臨場感を感じていただけるよう 当日のエンディングムービーに一部音声をお入れいたします</p>
+              <ul class="simple-tags"><li>音声追加</li><li>当日上映</li></ul>
               <p class="option-price">+ ¥30,000 <small>税込 ¥33,000</small></p>
             </article>
             <article class="option-card">
-              <span>02</span>
+              <span class="option-num">02</span>
               <h4>PREMIUM</h4>
-              <p>パーティー後半の手紙、花束贈呈シーンまで収録します。</p>
+              <p>パーティー後半の手紙シーン 花束贈呈シーンまで収録します</p>
+              <ul class="simple-tags"><li>花束贈呈まで</li><li>当日納品</li></ul>
               <p class="option-price">+ ¥50,000 <small>税込 ¥55,000</small></p>
             </article>
             <article class="option-card">
-              <span>03</span>
+              <span class="option-num">03</span>
               <h4>ONEDAY</h4>
-              <p>当日の音声を使用した約10分のダイジェストムービーです。</p>
+              <p>当日の音声を使用した約10分のダイジェストムービーです</p>
+              <ul class="simple-tags"><li>約10分</li><li>データURL</li><li>約1ヶ月後お届け</li></ul>
               <p class="option-price">+ ¥70,000 <small>税込 ¥77,000</small></p>
             </article>
           </div>
         </div>
+
+        <div class="detail-panel">
+          <div class="option-title">
+            <p class="section-kicker">More Options</p>
+            <h3>エンディングムービー関連オプション</h3>
+          </div>
+          <div class="detail-list">
+            <div><strong>テキスト挿入</strong><span>ゲストの方々のお名前やメッセージ 歌詞などを表示いたします</span><em>税込 ¥11,000</em></div>
+            <div><strong>想い出写真 / 動画挿入</strong><span>映像や写真をエンディングに挿入いたします 写真6カットまで 動画1分まで</span><em>税込 ¥11,000</em></div>
+            <div><strong>Wedding Videographer指名</strong><span>詳細は指名サイトをご覧ください セット割引対象外</span><em>税込 ¥44,000</em></div>
+            <div><strong>エンディングムービー音楽著作権申請 ISUM</strong><span>ISUM登録楽曲に限ります</span><em>税込 ¥8,800</em></div>
+            <div><strong>事前撮影</strong><span>ご結婚式までのおふたりを映像で彩ります 内容要相談</span><em>平日 税込 ¥66,000 / 土日祝 税込 ¥110,000</em></div>
+            <div><strong>外式出張撮影</strong><span>神社様や外部会場への出張撮影です 場所により別途移動費が発生する場合がございます</span><em>税込 ¥22,000</em></div>
+            <div><strong>追加ディスク作成</strong><span>形態 Blu-ray or DVD ディスク1枚をお届けいたします</span><em>税込 ¥11,000</em></div>
+          </div>
+          <p class="note">当日上映の納品映像は専用USBに全てまとめてデータでお渡しいたします オープニングアクトやヒストリー等はエンディングムービーと同じ専用USBにデータを入れて納品いたします</p>
+        </div>
+
+        <section class="section-cta" aria-label="エンディングムービー確認リンク">
+          <div>
+            <p class="cta-eyebrow">ending movie</p>
+            <h3>上映する瞬間をイメージする</h3>
+            <p>当日上映の雰囲気や編集のテンポは サンプルムービーから確認できます</p>
+          </div>
+          <a class="cta-button primary" data-config-link="sampleMovie" href="https://sites.google.com/datapool.co.jp/sample-site-vm/sample-movie">
+            <span>sample movie</span>
+            <strong>エンディングを見る</strong>
+          </a>
+        </section>
       </section>
 
       <section class="product-section" id="document">
         <div class="section-label">
           <p class="section-kicker">Main Item 02</p>
           <h2>ドキュメント</h2>
+          <p class="lead-lines"><span>結婚式の一日を約60分で残す</span><span>長編記録ムービー</span></p>
         </div>
 
         <article class="main-product reverse">
@@ -145,15 +216,20 @@
             <p class="product-subtitle">長編ムービー / 約60分</p>
             <p class="price">¥195,000 <small>税込 ¥214,500</small></p>
             <p>
-              スピーチやご友人メッセージも含め、結婚式の一日を長編記録として残します。
-              おふたりだけでなく、ご家族への贈り物にもおすすめです。
+              スピーチやご友人メッセージも含め 結婚式の一日を長編記録として残します
+              おふたりだけでなく ご家族への贈り物にもおすすめです
             </p>
-            <ul class="tag-list">
-              <li>スピーチ音声</li>
-              <li>事前編集インタビュー</li>
-              <li>ご友人メッセージ</li>
-              <li>USB type-A納品</li>
+            <ul class="icon-list">
+              <li><span class="mini-icon">音声</span><strong>スピーチ音声</strong><small>言葉と空気感を記録</small></li>
+              <li><span class="mini-icon">親御</span><strong>親御様インタビュー</strong><small>大切な声を記録</small></li>
+              <li><span class="mini-icon">友人</span><strong>ご友人メッセージ</strong><small>お祝いの言葉を収録</small></li>
+              <li><span class="mini-icon">USB</span><strong>USB type-A納品</strong><small>約1ヶ月後にお届け</small></li>
+              <li><span class="mini-icon">BGM</span><strong>著作権フリーBGM差し替え</strong><small>対象シーンを適切に編集</small></li>
             </ul>
+            <div class="notice-box">
+              <p><span>BGM著作権に抵触するシーンのBGMは</span><span>mottoおすすめBGMにてダイジェスト編集となります</span></p>
+              <p><span>インタビュー撮影 ご友人からのお祝いメッセージの</span><span>ゲスト指定はできかねます</span></p>
+            </div>
           </div>
         </article>
 
@@ -164,32 +240,61 @@
           </div>
           <div class="option-grid">
             <article class="option-card">
-              <span>01</span>
+              <span class="option-num">01</span>
               <h4>ファミリーセット</h4>
-              <p>ご両家の親御様へ、一生の思い出をプレゼントできます。</p>
+              <p>ご両家の親御様にプレゼント 一生の思い出をご両家のご家庭に残せます</p>
+              <ul class="simple-tags"><li>BD + 2枚</li><li>親御様用</li></ul>
               <p class="option-price">+ ¥20,000 <small>税込 ¥22,000</small></p>
             </article>
             <article class="option-card">
-              <span>02</span>
+              <span class="option-num">02</span>
               <h4>ISUM音源対応</h4>
-              <p>会場で流れるBGMや余興シーンも、当日の音声そのままに残せます。</p>
+              <p>会場で流れるBGMや余興シーンも ありのままの音声で残せます</p>
+              <p class="option-caution">残せるBGMはISUMに登録されている楽曲のみです</p>
+              <ul class="simple-tags"><li>約100分</li><li>ISUM登録楽曲のみ</li></ul>
               <p class="option-price">+ ¥38,000 <small>税込 ¥41,800</small></p>
             </article>
             <article class="option-card">
-              <span>03</span>
+              <span class="option-num">03</span>
               <h4>2カメ撮影</h4>
-              <p>2名のカメラマンが、異なる視点から余すことなく撮影します。</p>
+              <p>2名のカメラマンが 異なる視点から余すことなく撮影します</p>
+              <ul class="simple-tags"><li>2台カメラ</li><li>別視点を記録</li></ul>
               <p class="option-price">+ ¥70,000 <small>税込 ¥77,000</small></p>
             </article>
           </div>
         </div>
+
+        <div class="scene-panel">
+          <div class="option-title">
+            <p class="section-kicker">Shooting Scenes</p>
+            <h3>各種アイテム撮影シーン</h3>
+          </div>
+          <div class="scene-bars">
+            <div><strong>オープニングアクト</strong><small>撮影範囲  ヘアメイクから挙式途中まで</small><em>当日上映 / 当日納品</em></div>
+            <div><strong>エンディングムービー</strong><small>撮影範囲  ヘアメイクからお色直しまで</small><em>当日上映 / 当日納品</em></div>
+            <div><strong>エンディングムービー &amp; PREMIUM</strong><small>撮影範囲  ヘアメイクから花束贈呈まで</small><em>当日上映 / 当日納品</em></div>
+            <div><strong>ドキュメント / ONEDAY</strong><small>撮影範囲  ヘアメイクからおひらきまで</small><em>後日納品</em></div>
+          </div>
+        </div>
+
+        <section class="section-cta muted" aria-label="ドキュメントサンプルリンク">
+          <div>
+            <p class="cta-eyebrow">document movie</p>
+            <h3>ドキュメントの映像を見る</h3>
+            <p>声や空気感の残り方は サンプルムービーからご確認いただけます</p>
+          </div>
+          <a class="cta-button secondary" data-config-link="sampleMovie" href="https://sites.google.com/datapool.co.jp/sample-site-vm/sample-movie">
+            <span>sample movie</span>
+            <strong>ドキュメントを見る</strong>
+          </a>
+        </section>
       </section>
 
       <section class="product-section sub-section" id="sub-items">
         <div class="section-label">
           <p class="section-kicker">Sub Items</p>
           <h2>サブアイテム</h2>
-          <p>メイン商品と組み合わせることで、上映演出や思い出の残し方が広がります。</p>
+          <p>メイン商品と組み合わせることで 上映演出や思い出の残し方が広がります</p>
         </div>
 
         <div class="sub-grid">
@@ -197,15 +302,17 @@
             <img data-config-image="opening" src="./assets/opening.jpg" alt="オープニングアクトのイメージ" />
             <div>
               <h3>オープニングアクト</h3>
-              <p>ヘアメイクから挙式の様子を、パーティー開宴時に上映します。</p>
+              <p>ヘアメイクから挙式途中までをパーティー開宴時に上映します</p>
+              <ul class="simple-tags"><li>当日上映</li><li>USB type-C</li><li>当日納品</li></ul>
               <p class="option-price">¥50,000 <small>税込 ¥55,000</small></p>
             </div>
           </article>
           <article class="sub-card">
-            <img data-config-image="history" src="./assets/history.jpg" alt="ヒストリーのイメージ" />
+            <img data-config-image="history" src="./assets/location.jpg" alt="ヒストリーのイメージ" />
             <div>
               <h3>ヒストリー</h3>
-              <p>おふたりの生い立ちを紐解く、結婚式の定番演出アイテムです。</p>
+              <p>おふたりの生い立ちを紐解く 結婚式の定番演出アイテムです</p>
+              <ul class="simple-tags"><li>事前編集</li><li>USB type-C</li><li>当日納品</li></ul>
               <p class="option-price">¥50,000 <small>税込 ¥55,000</small></p>
             </div>
           </article>
@@ -213,29 +320,60 @@
             <img data-config-image="prewedding" src="./assets/prewedding.jpg" alt="前撮りムービーのイメージ" />
             <div>
               <h3>前撮りムービー</h3>
-              <p>前撮りだけのおふたりの特別なシーンを、約2分のダイジェストにします。</p>
+              <p>前撮りだけのおふたりの特別なシーンを 約2分のダイジェストにします</p>
+              <ul class="simple-tags"><li>事前撮影</li><li>USB type-C</li><li>当日納品</li></ul>
               <p class="option-price">¥80,000 <small>税込 ¥88,000</small></p>
             </div>
           </article>
           <article class="sub-card">
-            <img data-config-image="location" src="./assets/location.jpg" alt="ロケーションムービーのイメージ" />
+            <img data-config-image="location" src="./assets/history.jpg" alt="ロケーションムービーのイメージ" />
             <div>
               <h3>ロケーションムービー</h3>
-              <p>婚姻届のシーンなど、おふたりが残したいシーンを撮影します。</p>
+              <p>婚姻届のシーンや おふたりが残したいシーンを撮影して上映します</p>
+              <ul class="simple-tags"><li>事前撮影</li><li>USB type-C</li><li>当日納品</li></ul>
               <p class="option-price">¥100,000 <small>税込 ¥110,000</small></p>
             </div>
           </article>
-          <article class="sub-card full">
-            <img data-config-image="memoryPlus" src="./assets/memory-plus.jpg" alt="想い出プラスMovieのイメージ" />
-            <div>
-              <h3>想い出プラスMovie</h3>
-              <p>
-                当日は無料で撮影し、ご結婚式後に専用サイトから映像をご確認いただいたうえで
-                購入できるサービスです。
-              </p>
-              <p class="option-price">後日購入サービス <small>価格は購入サイトでご確認いただけます</small></p>
-            </div>
-          </article>
+        </div>
+
+        <article class="memory-section" id="omoide-plus">
+          <div class="memory-copy">
+            <p class="section-kicker">Omoide plus movie</p>
+            <h3>想い出プラスMovie</h3>
+            <p>
+              当日は無料で記録映像を撮影しています
+              挙式後に専用サイトからショートムービーを確認し 欲しくなった場合のみ購入できます
+            </p>
+            <ul class="check-list">
+              <li>撮影は無料</li>
+              <li>ショートムービーはどなた様も無料で視聴可能</li>
+              <li>購入期限は原則ご結婚式当日から1ヶ月間</li>
+              <li>後日ゆっくり検討できるので安心</li>
+            </ul>
+          </div>
+          <a class="opm-paper" data-config-link="opmQr" href="https://liff.line.me/1656857747-nRrvvDdK/landing?follow=%40294qsdcy&lp=naraxS&liff_id=1656857747-nRrvvDdK" aria-label="想い出プラスMovieのQRリンクを開く">
+            <img data-config-image="opm" src="./assets/opm.jpg" alt="想い出プラスMovie紙面" />
+          </a>
+        </article>
+
+        <div class="memory-notice">
+          <h3>必ずご一読下さい 当撮影サービスをご利用の場合</h3>
+          <ul class="check-list">
+            <li>無料撮影サービスという特性上 撮影スタッフを確保できずに撮影できない場合がございます</li>
+            <li>ご購入期限は原則ご結婚式当日から1ヶ月間となります</li>
+            <li>ご結婚式当日は新郎様 新婦様とゲストの皆様への簡単なインタビューを撮らせていただきます</li>
+            <li>ご結婚式当日に新郎様 新婦様とご両家の親御様にご購入方法などのご案内をお渡しいたします</li>
+            <li>ご結婚式当日から約2週間以内にショートムービーご視聴URLのご案内をメールや郵送でお送りします</li>
+            <li>ご購入申込期限が近づきましたら ハガキ お電話にてご購入有無をご確認させていただきます</li>
+          </ul>
+          <h4>無料撮影のご依頼条件</h4>
+          <ul class="simple-tags notice-tags">
+            <li>ドキュメントの発注や持ち込みがない</li>
+            <li>ゲスト人数10名様以上</li>
+            <li>プロの司会者の発注がある</li>
+            <li>親御様がご参列されている</li>
+          </ul>
+          <p class="note">演出のみを目的としたエンドロールは同時に撮影が可能です</p>
         </div>
       </section>
 
@@ -243,19 +381,33 @@
         <div class="section-label">
           <p class="section-kicker">Recommended Plan</p>
           <h2>おすすめプランでよりお得に</h2>
-          <p>頼めば頼むほどお得になる割引特典をご用意しています。</p>
+          <p>
+            どんな組み合わせでも対象金額を超えると割引特典が適用されます
+            おふたりに必要なアイテムを自由に組み合わせられるのが魅力です
+          </p>
+        </div>
+
+        <div class="discount-rule">
+          <div><strong>30万円以上</strong><span>2万円OFF</span></div>
+          <div><strong>35万円以上</strong><span>3万円OFF</span></div>
+          <div><strong>40万円以上</strong><span>4万円OFF</span></div>
         </div>
 
         <div class="plan-list">
           <article class="plan-card highlight">
             <div>
-              <p class="product-subtitle">満足度 No.1</p>
+              <p class="product-subtitle">満足度 No 1</p>
               <h3>親御様にも嬉しい満足プラン</h3>
-              <p>エンディングムービー + ドキュメント + ISUM音源対応</p>
+              <ul class="plan-items">
+                <li><span>エンディングムービー ISUM音源対応</span><strong>本体 ¥203,000 / 税込 ¥223,300</strong></li>
+                <li><span>ドキュメント</span><strong>本体 ¥195,000 / 税込 ¥214,500</strong></li>
+                <li><span>ISUM音源対応</span><strong>本体 ¥38,000 / 税込 ¥41,800</strong></li>
+              </ul>
             </div>
             <div class="plan-price">
-              <span>4万円相当OFF</span>
-              <strong>¥396,000</strong>
+              <span>4万円OFF</span>
+              <del>本体 ¥436,000</del>
+              <strong>本体 ¥396,000</strong>
               <small>税込 ¥435,600</small>
             </div>
           </article>
@@ -263,12 +415,17 @@
           <article class="plan-card">
             <div>
               <p class="product-subtitle">プロにお任せ</p>
-              <h3>ムービー制作をプロに任せる安心プラン</h3>
-              <p>エンディングムービー + PREMIUM + ビデオグラファー指名</p>
+              <h3>安心のクオリティプラン</h3>
+              <ul class="plan-items">
+                <li><span>エンディングムービー ISUM音源対応</span><strong>本体 ¥203,000 / 税込 ¥223,300</strong></li>
+                <li><span>PREMIUM</span><strong>本体 ¥50,000 / 税込 ¥55,000</strong></li>
+                <li><span>ビデオグラファー指名 + 事前撮影 平日</span><strong>本体 ¥100,000 / 税込 ¥110,000</strong></li>
+              </ul>
             </div>
             <div class="plan-price">
-              <span>3万円相当OFF</span>
-              <strong>¥323,000</strong>
+              <span>3万円OFF</span>
+              <del>本体 ¥353,000</del>
+              <strong>本体 ¥323,000</strong>
               <small>税込 ¥355,300</small>
             </div>
           </article>
@@ -277,11 +434,16 @@
             <div>
               <p class="product-subtitle">おすすめ</p>
               <h3>人気アイテムをお得に選べるプラン</h3>
-              <p>エンディングムービー + PREMIUM + ONEDAY</p>
+              <ul class="plan-items">
+                <li><span>エンディングムービー ISUM音源対応</span><strong>本体 ¥203,000 / 税込 ¥223,300</strong></li>
+                <li><span>PREMIUM</span><strong>本体 ¥50,000 / 税込 ¥55,000</strong></li>
+                <li><span>ONEDAY</span><strong>本体 ¥70,000 / 税込 ¥77,000</strong></li>
+              </ul>
             </div>
             <div class="plan-price">
-              <span>2万円相当OFF</span>
-              <strong>¥303,000</strong>
+              <span>2万円OFF</span>
+              <del>本体 ¥323,000</del>
+              <strong>本体 ¥303,000</strong>
               <small>税込 ¥333,300</small>
             </div>
           </article>
@@ -289,36 +451,80 @@
           <article class="plan-card">
             <div>
               <p class="product-subtitle">大人気</p>
-              <h3>おふたりが選ぶmottoおすすめプラン</h3>
-              <p>エンディングムービー + PREMIUM + ヒストリー</p>
+              <h3>mottoおすすめプラン</h3>
+              <ul class="plan-items">
+                <li><span>エンディングムービー ISUM音源対応</span><strong>本体 ¥203,000 / 税込 ¥223,300</strong></li>
+                <li><span>PREMIUM</span><strong>本体 ¥50,000 / 税込 ¥55,000</strong></li>
+                <li><span>ヒストリー</span><strong>本体 ¥50,000 / 税込 ¥55,000</strong></li>
+              </ul>
             </div>
             <div class="plan-price">
-              <span>2万円相当OFF</span>
-              <strong>¥283,000</strong>
+              <span>2万円OFF</span>
+              <del>本体 ¥303,000</del>
+              <strong>本体 ¥283,000</strong>
               <small>税込 ¥311,300</small>
             </div>
           </article>
         </div>
+
+        <section class="section-cta dark" aria-label="おすすめプラン確認リンク">
+          <div>
+            <p class="cta-eyebrow">videographer selection</p>
+            <h3>おふたり好みのビデオグラファーを見つけませんか</h3>
+            <p>映像の雰囲気や撮影スタイルから おふたりに合うビデオグラファーをお選びいただけます</p>
+          </div>
+          <a class="cta-button primary" data-config-link="videographer" href="https://sites.google.com/datapool.co.jp/videographer-selection/top">
+            <span>selection site</span>
+            <strong>指名制度を見る</strong>
+          </a>
+        </section>
       </section>
 
       <section class="info-section" id="bgm">
         <div class="section-label">
           <p class="section-kicker">BGM Copyright</p>
           <h2>BGM著作権について</h2>
+          <p>
+            BGMはムービーの印象を左右する大切な要素です
+            お申込内容によってBGMの取り扱いや著作権対応が異なるため 必ずご確認ください
+          </p>
         </div>
         <div class="info-grid">
           <article>
             <h3>エンディングムービー / ヒストリー</h3>
-            <p>BGMはmottoおすすめBGM、またはISUM登録BGMから1曲をお選びいただけます。</p>
-            <p class="note">ISUM楽曲申請料: エンディング ¥8,000 / ヒストリー ¥5,000</p>
+            <p>
+              BGMは弊社所有のmottoおすすめBGM またはISUM登録BGMから1曲をお選びいただけます
+              市販楽曲をご希望の場合は 曲名 アーティスト名 ISUM番号をご確認ください
+            </p>
+            <p class="note">ISUM楽曲申請料 エンディング 税込 ¥8,800 / ヒストリー 税込 ¥5,500</p>
+            <div class="inline-actions">
+              <a class="button secondary compact" data-config-link="mottoBgm" href="https://sites.google.com/d-wedding.co.jp/bgm/collection">mottoおすすめBGM</a>
+              <a class="button secondary compact" data-config-link="isum" href="https://isum.or.jp/music/">ISUM楽曲検索</a>
+            </div>
           </article>
           <article>
             <h3>ドキュメント</h3>
             <p>
-              著作権対応が必要なシーンは、motto保有のフリーBGMへ差し替えて制作します。
-              ISUM音源対応オプションを選ぶと、BGMも当日の雰囲気のまま残せます。
+              現場音声を収録した記録映像のため 演出効果のあるBGMをご使用されているシーンは
+              motto保有のフリーBGMへ差し替えて制作します
             </p>
-            <p class="note">ISUM音源対応: ¥38,000 税込 ¥41,800</p>
+            <div class="bgm-scenes">
+              <span>パーティの入場</span>
+              <span>乾杯</span>
+              <span>ケーキ</span>
+              <span>中座</span>
+              <span>お色直し入場</span>
+              <span>余興</span>
+              <span>おひらき</span>
+              <span>その他</span>
+            </div>
+            <p class="note">余興等でダンス 歌 演奏 DVD上映で著作権の発生するBGMをご使用された場合も対象です</p>
+            <p class="note">挙式 アフターセレモニーで著作権の発生するBGMを使用された場合も対象です</p>
+            <p>
+              フリーBGMに差し替えず 当日の音声で残したい場合は
+              オプションのISUM音源対応をご注文ください
+            </p>
+            <p class="note">ISUM音源対応 本体 ¥38,000 税込 ¥41,800</p>
           </article>
         </div>
       </section>
@@ -327,63 +533,88 @@
         <div class="section-label">
           <p class="section-kicker">Order Flow</p>
           <h2>お申込から納品まで</h2>
+          <p>商品によって必要な準備と納品タイミングが異なります</p>
         </div>
+
+        <a class="prepare-card" data-config-link="prepareSite" href="https://sites.google.com/d-wedding.co.jp/m-ver?usp=sharing">
+          <span class="link-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7V3Z"/><path d="M14 3v5h5"/><path d="M9.5 13h5"/><path d="M9.5 17h5"/></svg>
+          </span>
+          <div>
+            <strong>各アイテムの準備物のご案内はこちら</strong>
+            <span>ご希望アイテムに必要な写真 コメント BGM情報などをご確認いただけます</span>
+          </div>
+        </a>
 
         <ol class="timeline">
           <li>
             <span>01</span>
             <div>
               <h3>お申込</h3>
-              <p>ご希望のムービーアイテムをお選びください。</p>
+              <p>ご希望のムービーアイテムをお選びください</p>
             </div>
           </li>
           <li>
             <span>02</span>
             <div>
               <h3>ご案内メール</h3>
-              <p>会場よりご希望アイテムを確認後、準備に必要なご案内メールをお送りします。</p>
+              <p>会場よりご希望アイテムを確認後 各アイテムに必要な準備のご案内メールをお送りします</p>
             </div>
           </li>
           <li>
             <span>03</span>
             <div>
               <h3>ご婚礼1ヶ月前まで</h3>
-              <p>BGMの決定、ヒストリー用の生い立ち写真とコメント準備、事前撮影などを進めます。</p>
+              <p>エンディングムービーはご希望BGMを決定します</p>
+              <p>ヒストリーはご希望BGM 生い立ち写真 コメントをご準備ください</p>
+              <p>前撮りムービー ロケーションムービーは撮影を行います</p>
             </div>
           </li>
           <li>
             <span>04</span>
             <div>
               <h3>ご婚礼2週間前</h3>
-              <p>必要に応じて映像チェックを行います。</p>
+              <p>ヒストリー 前撮りムービー ロケーションムービーは映像チェックを行います</p>
+              <p>エンディングムービーはテキスト挿入追加ご注文の方のみ映像チェックがあります</p>
             </div>
           </li>
           <li>
             <span>05</span>
             <div>
-              <h3>ご婚礼当日 / 1ヶ月後</h3>
-              <p>当日上映アイテムはおひらき後に納品。ドキュメント・ONEDAYは約1ヶ月後にお届けします。</p>
+              <h3>ご婚礼当日</h3>
+              <p>おふたりのご希望にあわせたムービーを上映します</p>
+              <p>当日上映アイテムはご婚礼おひらき後に納品します</p>
+            </div>
+          </li>
+          <li>
+            <span>06</span>
+            <div>
+              <h3>ご婚礼1ヶ月後</h3>
+              <p>ドキュメント ONEDAYはご婚礼1ヶ月後を目安にお手元へお届けします</p>
             </div>
           </li>
         </ol>
       </section>
-
-      <section class="contact" id="contact">
-        <img data-config-image="logoWhite" src="./assets/motto-logo-white.png" alt="motto" />
-        <p class="section-kicker">Next Step</p>
-        <h2>サンプル確認・お申込は会場担当者へ</h2>
-        <p>
-          ビデオグラファー指名、サンプルムービー、Instagramへのリンクは、
-          site-config.js から正式URLへ差し替えできます。
-        </p>
-        <a class="button primary" href="#top">ページ上部へ戻る</a>
-      </section>
     </main>
 
     <footer class="footer">
-      <p>motto wedding photo &amp; movie brand</p>
-      <p>Copyright Datapool. All rights reserved.</p>
+      <div class="footer-brand">
+        <img class="footer-logo-image" data-config-image="logoWhite" src="./assets/motto-logo-white.png" alt="motto" />
+        <p>wedding movie brand</p>
+      </div>
+      <div class="footer-info">
+        <p><span>営業時間</span><strong>10時から17時</strong></p>
+        <p><span>定休日</span><strong>火曜水曜定休日</strong></p>
+        <p><span>TEL</span><strong>06-6941-7250</strong></p>
+      </div>
+      <address class="footer-address">
+        <p>株式会社データプール</p>
+        <p>大阪オフィス 〒540-0012 大阪市中央区谷町1-4-2 オルガンビル3F</p>
+      </address>
+      <p class="footer-copy">Copyright Datapool All rights reserved</p>
     </footer>
+
+    <a class="back-to-top" href="#top" aria-label="トップに戻る">TOP</a>
 
     <script src="./site-config.js"></script>
     <script src="./site.js"></script>
