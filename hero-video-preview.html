@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>motto hero video preview</title>
+    <style>
+      :root {
+        --ink: #302d2c;
+        --white: #fffdfb;
+        --accent: #8b7070;
+        --line: rgba(255, 255, 255, 0.24);
+        --font-ja: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
+        --font-en: "Helvetica Neue", Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        overflow-x: hidden;
+        background: var(--ink);
+      }
+
+      body {
+        font-family: var(--font-ja);
+        color: var(--white);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .hero {
+        position: relative;
+        display: grid;
+        place-items: center;
+        min-height: 100svh;
+        padding: clamp(88px, 10vw, 132px) 22px clamp(74px, 8vw, 110px);
+        overflow: hidden;
+        text-align: center;
+        isolation: isolate;
+      }
+
+      .video {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        background: #171414;
+        z-index: -3;
+      }
+
+      .video iframe {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 124%;
+        height: 124%;
+        border: 0;
+        transform: translate(-50%, -50%) scale(1.05);
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        background:
+          linear-gradient(90deg, rgba(18, 16, 16, 0.78), rgba(18, 16, 16, 0.3) 48%, rgba(18, 16, 16, 0.72)),
+          linear-gradient(180deg, rgba(18, 16, 16, 0.5), rgba(18, 16, 16, 0.12) 42%, rgba(18, 16, 16, 0.78));
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: clamp(18px, 2.8vw, 34px);
+        z-index: -1;
+        border: 1px solid var(--line);
+        pointer-events: none;
+      }
+
+      .copy {
+        display: grid;
+        justify-items: center;
+        width: min(920px, 100%);
+        animation: copyIn 1200ms cubic-bezier(0.19, 1, 0.22, 1) both;
+      }
+
+      .brand {
+        margin: 0 0 clamp(22px, 3vw, 34px);
+        font-size: clamp(15px, 1.8vw, 24px);
+        letter-spacing: 0.08em;
+        text-shadow: 0 2px 22px rgba(0, 0, 0, 0.45);
+      }
+
+      h1 {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        font-size: clamp(34px, 5.1vw, 72px);
+        font-weight: 400;
+        line-height: 1.55;
+        letter-spacing: 0.08em;
+        text-shadow: 0 3px 30px rgba(0, 0, 0, 0.58);
+      }
+
+      h1 span {
+        display: block;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-top: clamp(34px, 5vw, 58px);
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 210px;
+        min-height: 54px;
+        padding: 12px 26px;
+        color: var(--white);
+        border-radius: 999px;
+        font-family: var(--font-en);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-decoration: none;
+        transition:
+          transform 220ms ease,
+          background 220ms ease,
+          box-shadow 220ms ease;
+      }
+
+      .pill:hover {
+        transform: translateY(-3px);
+      }
+
+      .pill.primary {
+        background: rgba(139, 112, 112, 0.9);
+        box-shadow: 0 18px 44px rgba(0, 0, 0, 0.24);
+      }
+
+      .pill.secondary {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.54);
+        backdrop-filter: blur(8px);
+      }
+
+      @keyframes copyIn {
+        from {
+          opacity: 0;
+          filter: blur(8px);
+          transform: translateY(30px);
+        }
+
+        to {
+          opacity: 1;
+          filter: blur(0);
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 720px) {
+        .hero {
+          min-height: 690px;
+          padding: 82px 22px 72px;
+        }
+
+        .video iframe {
+          width: 215%;
+          height: 126%;
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .hero::after {
+          inset: 14px;
+        }
+
+        .brand {
+          font-size: 14px;
+          letter-spacing: 0.055em;
+        }
+
+        h1 {
+          font-size: clamp(28px, 7.4vw, 36px);
+          line-height: 1.75;
+          letter-spacing: 0.045em;
+        }
+
+        .actions {
+          display: grid;
+          width: min(310px, 100%);
+          margin-top: 36px;
+        }
+
+        .pill {
+          width: 100%;
+          min-width: 0;
+          min-height: 50px;
+          font-size: 11px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero">
+      <div class="video" aria-hidden="true">
+        <iframe
+          src="https://player.vimeo.com/video/850160156?h=37d09615b2&amp;badge=0&amp;autopause=0&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;background=1&amp;playsinline=1"
+          allow="autoplay; fullscreen; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="motto_channelOP">
+        </iframe>
+      </div>
+      <section class="copy" aria-label="motto wedding movie brand">
+        <p class="brand">motto｜wedding movie brand</p>
+        <h1>
+          <span>憶えておきたい感情がある</span>
+          <span>紡いでいきたい想いがある</span>
+        </h1>
+        <div class="actions">
+          <a class="pill primary" href="https://www.instagram.com/motto_wd">motto instagramを見る</a>
+          <a class="pill secondary" href="https://sites.google.com/datapool.co.jp/sample-site-vm/sample-movie">サンプルムービーを見る</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

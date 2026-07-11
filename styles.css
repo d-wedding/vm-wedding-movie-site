@@ -18,6 +18,7 @@
   --section-width: 1120px;
   --wide-width: 1240px;
   --image-radius: 4px;
+  --header-offset: 92px;
 }
 
 * {
@@ -27,13 +28,14 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 94px;
+  scroll-padding-top: calc(var(--header-offset) + 18px);
   width: 100%;
   overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  padding-top: var(--header-offset);
   width: 100%;
   min-width: 0;
   overflow-x: hidden;
@@ -86,8 +88,10 @@ li {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 20;
   display: flex;
   align-items: center;
@@ -121,14 +125,21 @@ li {
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   gap: 6px 22px;
+  overflow-x: auto;
   color: var(--muted);
   font-family: var(--font-en);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.06em;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
 }
 
 .nav a {
@@ -139,6 +150,11 @@ li {
 .nav a:hover {
   color: var(--ink);
   border-color: var(--accent);
+}
+
+.keep-line {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .hero-simple {
@@ -1061,6 +1077,10 @@ h4 {
   border-radius: 10px;
 }
 
+.memory-product-section {
+  background: transparent;
+}
+
 .opm-paper {
   display: block;
   align-self: start;
@@ -1086,6 +1106,29 @@ h4 {
 
 .notice-tags {
   margin-bottom: 16px;
+}
+
+.memory-condition-block {
+  margin-bottom: 28px;
+  padding: clamp(18px, 3vw, 26px);
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.memory-condition-block h3,
+.memory-notice > h3 {
+  margin-bottom: 16px;
+  color: var(--ink);
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.memory-condition-block .note {
+  margin: 14px 0 0;
+  color: var(--accent-dark);
+  font-weight: 700;
 }
 
 .bgm-scenes {
@@ -1601,6 +1644,10 @@ h4 {
 }
 
 @media (max-width: 1120px) {
+  :root {
+    --header-offset: 132px;
+  }
+
   .site-header {
     align-items: stretch;
     flex-direction: column;
@@ -1694,6 +1741,10 @@ h4 {
 }
 
 @media (max-width: 640px) {
+  :root {
+    --header-offset: 126px;
+  }
+
   body {
     font-size: 15px;
     line-height: 1.82;
@@ -1721,15 +1772,19 @@ h4 {
     margin-inline: 0;
     padding-inline: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 12px;
     font-size: 12px;
-    overflow-x: visible;
-    white-space: normal;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
   .nav a {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
+  }
+
+  .keep-line {
+    white-space: normal;
   }
 
   .hero-simple {

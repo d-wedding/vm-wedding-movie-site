@@ -25,6 +25,10 @@
 
   const splitText = (element) => {
     if (element.dataset.splitText === "true") return;
+    if (element.querySelector(".keep-line")) {
+      element.dataset.splitText = "true";
+      return;
+    }
     const text = element.textContent;
     element.textContent = "";
     element.classList.add("split-text");

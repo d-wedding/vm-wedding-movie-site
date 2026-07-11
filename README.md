@@ -31,10 +31,7 @@ ending: "./assets/new-ending.jpg"
 links: {
   videographer: "https://example.com",
   sampleMovie: "https://example.com",
-  instagram: "https://www.instagram.com/example/",
-  prepareSite: "https://example.com",
-  mottoBgm: "https://example.com",
-  isum: "https://example.com"
+  instagram: "https://www.instagram.com/example/"
 }
 ```
 
