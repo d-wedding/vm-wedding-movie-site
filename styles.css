@@ -2133,3 +2133,9 @@ h4 {
     border-radius: 10px;
   }
 }
+
+/* Added: keep the expanded top navigation tidy after adding videographer selection */
+.site-header .nav { gap: 6px 18px; }
+@media (max-width: 1180px) {
+  .site-header .nav { justify-content: flex-start; }
+}

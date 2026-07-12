@@ -2142,6 +2142,13 @@ h4 {
   }
 }
 
+
+/* Added: keep the expanded top navigation tidy after adding videographer selection */
+.site-header .nav { gap: 6px 18px; }
+@media (max-width: 1180px) {
+  .site-header .nav { justify-content: flex-start; }
+}
+
 </style>
   </head>
   <body>
@@ -2156,6 +2163,7 @@ h4 {
         <a href="#sub-items">サブアイテム</a>
         <a href="#plans">おすすめプラン</a>
         <a href="#omoide-plus">想い出プラス</a>
+        <a data-config-link="videographer" href="https://sites.google.com/datapool.co.jp/videographer-selection/top">ビデオグラファー指名</a>
         <a data-config-link="sampleMovie" href="https://sites.google.com/datapool.co.jp/sample-site-vm/sample-movie">サンプルムービー</a>
         <a href="#bgm">BGM著作権</a>
         <a href="#flow">納品まで</a>
