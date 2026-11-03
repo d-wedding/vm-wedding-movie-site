@@ -6,7 +6,7 @@ window.SITE_CONFIG = {
     prepareSite: "https://sites.google.com/d-wedding.co.jp/m-ver?usp=sharing",
     mottoBgm: "https://sites.google.com/d-wedding.co.jp/bgm/collection",
     isum: "https://isum.or.jp/music/",
-    opmQr: "https://liff.line.me/1656857747-nRrvvDdK/landing?follow=%40294qsdcy&lp=naraxS&liff_id=1656857747-nRrvvDdK"
+    opmQr: "https://liff.line.me/1656857747-nRrvvDdK/landing?follow=%40294qsdcy&lp=GRhCff&liff_id=1656857747-nRrvvDdK"
   },
   images: {
     logo: "./assets/motto-logo.png",
@@ -18,7 +18,9 @@ window.SITE_CONFIG = {
     history: "./assets/location.jpg",
     prewedding: "./assets/prewedding.jpg",
     location: "./assets/history.jpg",
-    opm: "./assets/opm-20260916.jpg"
+    opm: "./assets/omoide-plus-leaflet-202610-page1.webp",
+    opmPage1: "./assets/omoide-plus-leaflet-202610-page1.webp",
+    opmPage2: "./assets/omoide-plus-leaflet-202610-page2.webp"
   },
   fonts: {
     japanese: '"Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "Noto Serif JP", serif',

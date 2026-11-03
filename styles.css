@@ -2159,3 +2159,102 @@ h4 {
 @media (max-width: 1180px) {
   .site-header .nav { justify-content: flex-start; }
 }
+
+
+/* 2026-10 Omoide plus leaflet, 2-page PDF presentation */
+.opm-leaflet {
+  align-self: start;
+  min-width: 0;
+  width: 100%;
+  display: grid;
+  gap: 14px;
+  padding: clamp(12px, 1.5vw, 18px);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.opm-leaflet-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  color: var(--accent-dark);
+  font-family: var(--font-ja);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.opm-leaflet-heading small {
+  color: var(--muted);
+  font-family: var(--font-en);
+  font-size: 11px;
+  letter-spacing: .02em;
+}
+.opm-leaflet-page {
+  position: relative;
+  display: block;
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  text-decoration: none;
+  background: #f5f4f1;
+  transition: box-shadow 220ms ease, transform 220ms ease;
+}
+.opm-leaflet-page:hover,
+.opm-leaflet-page:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(48,45,44,.12);
+}
+.opm-leaflet-page img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+}
+.opm-leaflet-page-label {
+  position: absolute;
+  inset: auto 10px 10px auto;
+  padding: 5px 10px;
+  background: rgba(255,255,255,.96);
+  color: #62514e;
+  border: 1px solid #e7ddd6;
+  border-radius: 4px;
+  font-size: 11px;
+  line-height: 1.3;
+  box-shadow: 0 2px 10px rgba(0,0,0,.07);
+}
+.opm-leaflet-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 9px;
+}
+.opm-leaflet-actions a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 12px 14px;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: .01em;
+  text-decoration: none;
+  transition: opacity 180ms ease;
+}
+.opm-leaflet-actions a:hover { opacity: .82; }
+.opm-leaflet-pdf { background: #f5f1ee; color: #725f5c; border: 1px solid #e4d9d3; }
+.opm-leaflet-line { background: #38564b; color: #fff; border: 1px solid #38564b; }
+@media (max-width: 767px) {
+  .opm-leaflet { gap: 12px; padding: 11px; }
+  .opm-leaflet-heading { font-size: 12px; }
+  .opm-leaflet-page-label { font-size: 10px; inset: auto 7px 7px auto; }
+  .opm-leaflet-actions a { padding: 12px; font-size: 12px; }
+}
